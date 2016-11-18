@@ -26,6 +26,6 @@ tap.test('IssueFinder', function(t) {
       t.equals(issues.length, 2, 'correct number of issues returned');
     });
   });
-  
+
   t.end();
 });
