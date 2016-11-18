@@ -1,0 +1,5 @@
+{
+  "name": "strong-github-tools",
+  "version": "0.1.0",
+  "description": "An Octokat-based API for querying the GitHub API"
+}
