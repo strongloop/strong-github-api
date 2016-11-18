@@ -1,5 +1,18 @@
 {
   "name": "strong-github-tools",
   "version": "0.1.0",
-  "description": "An Octokat-based API for querying the GitHub API"
+  "description": "An Octokat-based API for querying the GitHub API",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "lodash": "^4.17.2",
+    "moment": "^2.16.0",
+    "octokat": "^0.4.18",
+    "strong-debug-utils": "^1.0.1"
+  },
+  "devDependencies": {
+    "tap": "^8.0.1"
+  },
+  "scripts": {
+    "test": "tap test/test-*.js"
+  }
 }
