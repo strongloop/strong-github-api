@@ -1,7 +1,7 @@
 {
-  "name": "strong-github-tools",
+  "name": "strong-github-api",
   "version": "0.1.0",
-  "description": "An Octokat-based API for querying the GitHub API",
+  "description": "An Octokat-based API for querying GitHub",
   "dependencies": {
     "bluebird": "^3.4.6",
     "lodash": "^4.17.2",
