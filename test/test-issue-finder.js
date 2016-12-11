@@ -1,6 +1,6 @@
 'use strict';
 
-var IssueFinder = require('../lib/issue-finder');
+var IssueFinder = require('../index').IssueFinder;
 var Octokat = require('./fixtures/fake-octokat');
 var tap = require('tap');
 
