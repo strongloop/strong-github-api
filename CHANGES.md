@@ -1,3 +1,11 @@
+2016-12-11, Version 0.2.1
+=========================
+
+ * Change tests to use index exports (Kevin Delisle)
+
+ * index: add missing export for milestone-generator (Kevin Delisle)
+
+
 2016-12-11, Version 0.2.0
 =========================
 
