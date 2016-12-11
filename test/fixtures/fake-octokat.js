@@ -58,14 +58,38 @@ function Octokat() {
   this.issues.nextPage = function() {
     return Promise.resolve(self.otherIssues);
   };
-  this.repoInfo = {
+  var fakeRepo = {
+    name: 'fake-repo',
     issues: {
       fetch: function(filter) {
         return Promise.resolve(self.issues);
       },
     },
+    milestones: {
+      create: function() {
+        return Promise.resolve();
+      },
+    },
   };
+
+  this.repoInfo = [
+    fakeRepo,
+  ];
+
+  // Octokat API will sometimes return array or an iterable object;
+  // this fake needs to simulate both behaviours.
+  this.repoInfo.issues = fakeRepo.issues;
 }
+
+Octokat.prototype.orgs = function() {
+  var self = this;
+  return {
+    repos: self.repos(),
+  };
+};
+
+// For the purposes of the fake, it's the same thing.
+Octokat.prototype.users = Octokat.prototype.orgs;
 
 Octokat.prototype.repos = function() {
   var self = this;
