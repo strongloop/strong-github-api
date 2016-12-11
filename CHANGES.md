@@ -1,3 +1,9 @@
+2016-12-11, Version 0.2.2
+=========================
+
+ * milestone-generator: switch to /users route (Kevin Delisle)
+
+
 2016-12-11, Version 0.2.1
 =========================
 
