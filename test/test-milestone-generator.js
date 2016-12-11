@@ -1,7 +1,7 @@
 'use strict';
 
 var Octokat = require('./fixtures/fake-octokat');
-var milestoneGenerator = require('../lib/milestone-generator');
+var milestoneGenerator = require('../index').milestoneGenerator;
 var tap = require('tap');
 
 tap.test('milestone-generator', function(t) {
