@@ -11,14 +11,14 @@ tap.test('IssueFinder', function(t) {
     repo: 'fakeRepo',
   });
   t.test('find', function(t) {
-    return issueFinder.find({ state: 'open' }).then(function(issues) {
+    return issueFinder.find({state: 'open'}).then(function(issues) {
       t.ok(issues, 'issues were returned');
       t.equals(issues.length, 4, 'correct number of issues returned');
     });
   });
 
   t.test('olderThan', function(t) {
-    return issueFinder.find({ state: 'open' }).then(function(issues) {
+    return issueFinder.find({state: 'open'}).then(function(issues) {
       t.ok(issues, 'issues were returned');
       return issueFinder.olderThan(issues, '60');
     }).then(function(issues) {

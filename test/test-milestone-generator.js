@@ -12,7 +12,7 @@ tap.test('milestone-generator', function(t) {
     return milestoneGenerator({
       octo: octo,
       title: 'test-milestone',
-      due_on: '2016-12-26T00:00:00Z',
+      dueOn: '2016-12-26T00:00:00Z',
       org: 'fake-org',
       description: 'A test milestone made by strong-github-api',
     }).then(function(result) {
@@ -24,7 +24,7 @@ tap.test('milestone-generator', function(t) {
     return milestoneGenerator({
       octo: octo,
       title: 'test-milestone',
-      due_on: '2016-12-26T00:00:00Z',
+      dueOn: '2016-12-26T00:00:00Z',
       user: 'fake-user',
       description: 'A test milestone made by strong-github-api',
     }).then(function(result) {
