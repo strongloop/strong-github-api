@@ -58,7 +58,8 @@ function Octokat() {
   this.issues.nextPage = function() {
     return Promise.resolve(self.otherIssues);
   };
-  var fakeRepo = {
+
+  this.fakeRepo = {
     name: 'fake-repo',
     issues: {
       fetch: function(filter) {
@@ -73,7 +74,7 @@ function Octokat() {
   };
 
   this.repoInfo = [
-    fakeRepo,
+    this.fakeRepo,
   ];
 
   this.user = {
@@ -82,7 +83,7 @@ function Octokat() {
 
   // Octokat API will sometimes return array or an iterable object;
   // this fake needs to simulate both behaviours.
-  this.repoInfo.issues = fakeRepo.issues;
+  this.repoInfo.issues = this.fakeRepo.issues;
 }
 
 Octokat.prototype.orgs = function() {
