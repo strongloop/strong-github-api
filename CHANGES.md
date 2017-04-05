@@ -1,3 +1,15 @@
+2017-04-05, Version 0.2.3
+=========================
+
+ * milestone-generator: retrieve repos before run (Kevin Delisle)
+
+ * util: remove unnecessary import (Kevin Delisle)
+
+ * milestone-generator: allow repository list (Kevin Delisle)
+
+ * Use eslint-config-loopback and fix lint errors (Kevin Delisle)
+
+
 2016-12-11, Version 0.2.2
 =========================
 
